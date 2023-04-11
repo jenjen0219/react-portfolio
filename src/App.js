@@ -16,19 +16,12 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-
-
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-
         </Routes>
-
-
-
-
       </BrowserRouter>
       <Footer />
     </div>

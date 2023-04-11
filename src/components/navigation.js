@@ -1,67 +1,26 @@
-import React, { useState } from 'react';
-import {
-    MDBContainer,
-    MDBCollapse,
-    MDBNavbar,
-    MDBNavbarToggler,
-    MDBBtn,
-} from 'mdb-react-ui-kit';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-export default function App() {
-    const [showAnimated, setShowAnimated] = useState(false);
-
+function Navigation() {
     return (
-        <>
-            <section className='mb-3'>
-                <MDBNavbar>
-                    <MDBContainer fluid>
+        <Navbar style={{ backgroundColor: "green" }} expand="lg">
+            <Container>
+                <Navbar.Brand href="home">Jennifer Gutierrez Manjares</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="home">Home</Nav.Link>
+                        <Nav.Link href="about">About Me</Nav.Link>
+                        <Nav.Link href="portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="resume">Resume</Nav.Link>
+                        <Nav.Link href="contact">Contact Me</Nav.Link>
 
-                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-                        <MDBNavbarToggler
-                            type='button'
-                            className='first-button'
-                            data-target='#navbarToggleExternalContent'
-                            aria-controls='navbarToggleExternalContent'
-                            aria-expanded='false'
-                            aria-label='Toggle navigation'
-                            onClick={() => setShowAnimated(!showAnimated)}
-                        >
-                            <div className={`animated-icon1 ${showAnimated && 'open'}`}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </MDBNavbarToggler>
-                    </MDBContainer>
-                </MDBNavbar>
-
-                <MDBCollapse show={showAnimated}>
-                    <div className='bg-light shadow-3 p-4'>
-                        <MDBBtn block className='border-bottom m-0' color='link'>
-                            HOME
-                        </MDBBtn>
-                        <MDBBtn block className='border-bottom m-0' color='link'>
-                            ABOUT ME
-                        </MDBBtn>
-                        <MDBBtn block className='border-bottom m-0' color='link'>
-                            PORTFOLIO
-                        </MDBBtn>
-                        <MDBBtn block className='border-bottom m-0' color='link'>
-                            RESUME
-                        </MDBBtn>
-                        <MDBBtn block className='border-bottom m-0' color='link'>
-                            CONTACT ME
-                        </MDBBtn>
-                    </div>
-                </MDBCollapse>
-            </section>
-
-
-
-        </>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
+
+export default Navigation;

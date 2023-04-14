@@ -1,8 +1,8 @@
-
+import Navigation from "./Navigation";
 
 function Header() {
   return (
-    <div>Header</div>
+    <Navigation />
   )
 }
 

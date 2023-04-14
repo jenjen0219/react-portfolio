@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Container from 'react-bootstrap/Container';
 import Header from './components/Header';
 import Home from './components/pages/Home';
 import AboutMe from './components/pages/AboutMe';
@@ -10,18 +10,20 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="container">
-      <Navigation />
+    <div >
+      {/* <div></div> */}
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Container>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
       <Footer />
     </div>
   );

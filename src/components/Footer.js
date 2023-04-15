@@ -5,12 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 function Footer() {
     return (
         <>
-            <Navbar   bg="dark" variant="dark" expand="lg">
-                <Container className="justify-content-center">
-                    <Navbar.Brand href="/">Created By Jennifer Gutierrez Manjares - 2023</Navbar.Brand>
+        <div >
+            <Navbar class="text-success" bg="light"  expand="lg">
+                <Container className="justify-content-center footerEdit">
+                    <Navbar.Brand  > Created By Jennifer Gutierrez Manjares - 2023</Navbar.Brand>
                    
                 </Container>
         </Navbar>
+        </div>
         </>
     );
 }

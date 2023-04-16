@@ -7,14 +7,16 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/ContactMe';
 import Footer from './components/Footer';
+import Style from './App.css';
+import Banner from './components/Banner';
 
 function App() {
   return (
-    <div  className="mainBackground" >
+    <div className="mainBackground" >
       <BrowserRouter>
-      <Header />
-      <Container  >
-      
+        <Header />
+        <Banner />
+        <Container  >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutMe />} />
@@ -22,8 +24,8 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-      </Container>
-      <Footer />
+        </Container>
+        <Footer />
       </BrowserRouter>
 
     </div>

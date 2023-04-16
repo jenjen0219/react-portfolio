@@ -2,26 +2,32 @@ import React from 'react'
 
 function Home() {
     return (
-        <>
-     
 
-<container className="containerEl">
-<h1>
-    Hello!
-</h1>
+        <div className="containerEl">
 
-<h3>
-    My name is Jennifer, but I usually go by Jen. I have a dual degree from Washington State University for Management Informations Systems and Marketing that re-introduced me to coding and reminded me how much fun I had in an HTML web-design course I took a few years back at Wenatchee Valley College. I'm now currently attending the UW Fulllstack Coding Bootcamp with hopes of landing a junior software engineering role in the near future. Until then, I aim to apply what I've learned and help various Latino owned businesses with updating and or impriving upon any appilcations or practices that are otherwise outdated. If you'd like to learn more about my work or of myself in general then feel free to look around my portfolio that I made myself!
-</h3>
+            <div className='greeting'>
+                <h1>
+                    Hello!
+                </h1>
 
-<h4>
-    Thanks for visiting! 
-</h4>
-</container>
-        
-                
- 
-    </>
+                <p>
+                    My name is Jennifer, but I prefer to go by Jen. I hold a dual degree in Management Information Systems and Marketing from Washington State University. During my studies, I rediscovered my love for coding, which I had first experienced during an HTML web-design course I took a few years prior at Wenatchee Valley College. Currently, I am attending the UW Fullstack Coding Bootcamp in pursuit of a junior software engineering role.
+
+                    While I continue to seek employment, I am determined to apply the knowledge I have acquired thus far to help various Latino-owned businesses. My goal is to update or improve their applications and practices that may be outdated. If you would like to learn more about me or my work, please feel free to look around the portfolio that I  personally created using React and Bootstrap!
+
+
+                </p>
+
+                <p>
+                    Thanks for visiting!
+                </p>
+            </div>
+
+        </div>
+
+
+
+
     )
 }
 

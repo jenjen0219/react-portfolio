@@ -7,7 +7,10 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/ContactMe';
 import Footer from './components/Footer';
-import Style from './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import './App.css'
+
 import Banner from './components/Banner';
 
 function App() {

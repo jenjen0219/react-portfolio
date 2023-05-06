@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ContactMe() {
+function ContactMe() {ç
   return (
     <div>
       <h1>
@@ -8,8 +8,9 @@ function ContactMe() {
         </h1>
         <div>
           <form>
-            <input type="text" />
-            <input type="text" />
+            <input type="text" placeholder='name'/>
+            <input type="email" placeholder='email'/>
+            <textarea type="text" placeholder='message'/>
             <button type='submit'>
               Contact Me
             </button>

@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react'
-import Overlay from 'react-bootstrap';
+// import Overlay from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
 import profile from "../assets/images/project1Pic.png";
 
 
-function Projects() {
+function Projects({ projects }) {
 
     const containerEl = {
         backgroundColor: "white",
@@ -21,19 +21,27 @@ function Projects() {
                     Projects
                 </h1>
 
-                <Container style={containerEl}>
-                    <p >
-                        Road Trip Weather Planner
+                {
+                    projects.map((project) => {
+                        return (
 
 
-                    </p>
-                    <img src={profile}
+                            <Container style={containerEl}>
+                                <p >
+                                    {project.title}
+                                </p>
+                                <img src={project.image}
 
-                        className="rounded img-fluid project-image"
+                                    className="rounded img-fluid project-image"
 
-                    ></img>
+                                ></img>
 
-                </Container>
+                            </Container>
+
+                        )
+
+                    })
+                }
 
             </div>
         </>

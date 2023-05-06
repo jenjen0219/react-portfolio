@@ -8,7 +8,7 @@ function ContactMe() {
   })
 
   const handleOnChange = (e) => {
-    setInputs(() => ({
+    setInputs((prevInputs) => ({
       [e.target.name]: e.target.value
     }))
     console.log("e", e.target.value)
@@ -25,9 +25,10 @@ function ContactMe() {
           {inputs.name === "" && (
             <div>please enter name</div>
           )}
-          <input type="text" placeholder='name' name="name"
+          <input type="text" placeholder='name'
             value={inputs.name} onChange={handleOnChange}
           />
+          
           <input type="email" placeholder='email' />
           <textarea type="text" placeholder='message' />
           <button type='submit'>

@@ -36,6 +36,14 @@ function Projects({ projects }) {
 
                                 ></img>
 
+                                <a href={project.links.github}>
+                                    Github Repo
+                                </a>
+
+                                <a href={project.links.live}>
+                                    Live Link to Witches Brew & Eats
+                                </a>
+
                             </Container>
 
                         )

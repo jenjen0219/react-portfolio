@@ -21,7 +21,7 @@ function AboutMe() {
 
                     <br />
                     <br />
-                    <img src={profile} className='img-fluid shadow-4' alt='profile ' width={800} height={200} />
+                    <img src={profile} className='img-fluid shadow-4 pic' alt='profile ' width={800} height={200} />
 
                     <br />
                     <br />
